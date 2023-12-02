@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form class="option-1" onchange="formchange()">
+        <input id="copy" type="checkbox" name="copy" class=" hidden-input" >
+        <label for="copy" class="option"><i class="fa-solid fa-copy"></i></label>
+        <input id="cut" type="checkbox" name="cut" class=" hidden-input" >
+        <label for="cut" class="option"><i class="fa-solid fa-scissors"></i></label>
+        <input id="paste" type="checkbox" name="paste" class=" hidden-input" >
+        <label for="paste" class="option"><i class="fa-solid fa-paste"></i></label>
+    
+        <input id="bold" type="checkbox" name="bold" class=" hidden-input" >
+        <label for="bold" class="option"><i class="fa-solid fa-bold"></i></label>
+    
+        <input id="italic" type="checkbox" name="italic" class=" hidden-input">
+        <label for="italic" class="option"><i class="fa-solid fa-italic"></i></label>
+    
+        <input id="underline" type="checkbox" name="underline" class=" hidden-input">
+        <label for="underline" class="option"><i class="fa-solid fa-underline"></i></label>
+    
+        <input type="radio" name="align"  id="left" class=" hidden-input" value="left">
+        <label for="left" class="option"><i class="fa-solid fa-align-left"></i></label>
+        <input type="radio" name="align"  id="center" class=" hidden-input" value="center">
+        <label for="center" class="option"><i class="fa-solid fa-align-center"></i></label>
+        <input type="radio" name="align"  id="right" class=" hidden-input" value="right">
+        <label for="right" class="option"><i class="fa-solid fa-align-right"></i></label>
+     
+        <input id="color" type="color" name="color" class="color" value="#000000">
+        <label for="color" class="option"><i class="fa-solid fa-palette"></i></label>
+        
+        <input id="bgcolor" type="color" name="bgcolor" class="color" value="#ffffff">
+        <label for="bgcolor" class="option"><i class="fa-solid fa-paint-roller"></i></label>
+      
+        <button class="import"><i class="fa-solid fa-cloud-arrow-up"></i></button>
+        <button class="export"><i class="fa-solid fa-cloud-arrow-down"></i></button>
+</form>
+
+
+
+    <div class="option_2">
+        <div class="box" id="active-cell">null</div>
+        <input  class="input"type="text" placeholder="f (x) ">
+    </div>
+    <div class="container">
+            <div class="tools"></div>
+        <div class="main">
+            <div class="sno"></div>
+            <div class="body">
+                
+            </div>
+        </div>
+    </div>
+    <button id="sheetsContainer">Sheet1</button>
+    <button class="sheets-folder-cont">Sheet1</button>
+    <script src="script.js"></script>
+</body>
+</html>

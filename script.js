@@ -189,3 +189,14 @@ input.addEventListener("focus",()=>{
 })
 
 
+let plus=document.querySelector("#sheetsContainer");
+let boxs=document.querySelector(".boxs");
+let i=1;
+plus.addEventListener("click",()=>{
+    
+    let di=document.createElement("div");
+    di.innerText=`sheet${i}`;
+    di.classList.add("n");
+    boxs.appendChild(di);
+    i++;
+})

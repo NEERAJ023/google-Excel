@@ -99,8 +99,24 @@ form{
 }
 #sheetsContainer{
     position:absolute;
-    width:80px;
+    width:40px;
     bottom:10px;
     left:80px;
     height:30px;
+}
+.boxs{
+    position:absolute;
+   
+    bottom:10px;
+    left:180px;
+    height:30px;
+    display:flex;
+    gap:20px;
+}
+.n{
+    width:70px;
+    height:25px;
+    text-align: center;
+    background-color:#efefef;
+    border:1px solid black;
 }
